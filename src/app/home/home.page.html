@@ -1,20 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+<ion-content>
+    <swiper #swiper (slideChange)="onSlideChange()" [config]="config">
+      <ng-template swiperSlide>
+        <app-comp1></app-comp1>
+      </ng-template>
+      <ng-template swiperSlide><app-comp2></app-comp2></ng-template>
+      <ng-template swiperSlide><app-comp3></app-comp3></ng-template>
+    </swiper>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-button slot="start" (click)="onClickPrev()">Prev</ion-button>
+      <ion-button slot="end" (click)="onClickNext()">Next</ion-button>
+  
     </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+
