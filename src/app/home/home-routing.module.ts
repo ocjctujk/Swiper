@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },  {
+    path: 'new-page',
+    loadChildren: () => import('./new-page/new-page.module').then( m => m.NewPagePageModule)
   }
+
 ];
 
 @NgModule({

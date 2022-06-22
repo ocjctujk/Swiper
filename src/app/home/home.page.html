@@ -1,17 +1,45 @@
-
-
+<ion-header>
+  <ion-toolbar>
+    <ion-title>new-page</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/home/new-page">Go to new page</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-    <swiper #swiper (slideChange)="onSlideChange()" [config]="config">
+  <!--
+  <ion-label>
+    Name
+  </ion-label>
+  <ion-input placeholder="write your name" type="text"> -->
+
+  <!-- </ion-input> -->
+    <!-- <swiper #swiper (slideChange)="onSlideChange()" [config]="config">
       <ng-template swiperSlide>
         <app-comp1></app-comp1>
       </ng-template>
-      <ng-template swiperSlide><app-comp2></app-comp2></ng-template>
+      <ng-template swiperSlide><app-comp2 #slide2></app-comp2></ng-template>
       <ng-template swiperSlide><app-comp3></app-comp3></ng-template>
     </swiper>
     <ion-toolbar>
       <ion-button slot="start" (click)="onClickPrev()">Prev</ion-button>
       <ion-button slot="end" (click)="onClickNext()">Next</ion-button>
-  
-    </ion-toolbar>
+
+    </ion-toolbar> -->
+
+
+    <ion-slides #slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-button routerLink="/home/new-page">Go to second page 2</ion-button>
 </ion-content>
 

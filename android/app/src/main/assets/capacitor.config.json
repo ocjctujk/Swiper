@@ -1,0 +1,6 @@
+{
+	"appId": "io.slider.com",
+	"appName": "sliding-project",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

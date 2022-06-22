@@ -1,0 +1,36 @@
+// @media screen and (min-device-width: 400px) and (max-device-width:1180px)  and (orientation: landscape) {
+//   ion-router-outlet  {
+//     display: none;
+//   }
+//   #lock{
+//     display: block;
+//   }
+// }
+
+// @media screen and (min-width: 500px) and (orientation: landscape) {
+//   ion-router-outlet  {
+//     display: none;
+//   }
+//   #lock{
+//     display: block;
+//   }
+// }
+// @media screen and (orientation: portrait) {
+//   ion-router-outlet  {
+//     display: block;
+//   }
+//   #lock{
+//     display: none;
+//   }
+// }
+
+// #lock{
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   font-size: 1.5rem;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: var(--ion-color-dark);
+//   color: var(--ion-color-light);
+// }
